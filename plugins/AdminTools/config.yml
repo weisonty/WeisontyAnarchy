@@ -1,0 +1,31 @@
+logging:
+  enabled: true
+  log-file: "logs/admin-actions.log"
+  broadcast-to-admins: true
+  admin-permission: "admintools.kick"
+
+ban:
+  default-reason: "Banned by an admin"
+  permanent-message: "§cYou have been permanently banned.\n§7Reason: {reason}\n§7Appeal: discord.gg/weisonty"
+
+kick:
+  default-reason: "Kicked by an admin"
+
+mute:
+  default-duration: 3600
+  default-reason: "Muted by an admin"
+  notify-on-chat: true
+
+warn:
+  max-warnings: 3
+  action-on-max: "kick"
+
+freeze:
+  notify-player: true
+  freeze-message: "§cYou have been frozen by an admin."
+
+notifications:
+  ban-broadcast: true
+  kick-broadcast: false
+  mute-broadcast: true
+  warn-broadcast: true
