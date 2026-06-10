@@ -1,0 +1,89 @@
+name: AdminTools
+main: AdminTools\Main
+version: 1.0.0
+api: ["5.0.0"]
+description: Admin tools for Weisonty Anarchy server
+author: WeisontyDev
+load: STARTUP
+
+commands:
+  ban:
+    description: Ban a player
+    usage: /ban <player> [reason]
+    permission: admintools.ban
+  unban:
+    description: Unban a player
+    usage: /unban <player>
+    permission: admintools.ban
+  kick:
+    description: Kick a player
+    usage: /kick <player> [reason]
+    permission: admintools.kick
+  mute:
+    description: Mute a player
+    usage: /mute <player> [duration] [reason]
+    permission: admintools.mute
+  unmute:
+    description: Unmute a player
+    usage: /unmute <player>
+    permission: admintools.mute
+  warn:
+    description: Warn a player
+    usage: /warn <player> <reason>
+    permission: admintools.warn
+  freeze:
+    description: Freeze or unfreeze a player
+    usage: /freeze <player>
+    permission: admintools.freeze
+  tp:
+    description: Teleport to a player or location
+    usage: /tp <player> [target]
+    permission: admintools.tp
+  tphere:
+    description: Teleport a player to you
+    usage: /tphere <player>
+    permission: admintools.tp
+  invsee:
+    description: View a player's inventory
+    usage: /invsee <player>
+    permission: admintools.invsee
+  give:
+    description: Give a player items
+    usage: /give <player> <item> [amount]
+    permission: admintools.give
+  adminlog:
+    description: View recent admin logs
+    usage: /adminlog [lines]
+    permission: admintools.log
+
+permissions:
+  admintools.ban:
+    description: Ban/unban players
+    default: op
+  admintools.kick:
+    description: Kick players
+    default: op
+  admintools.mute:
+    description: Mute/unmute players
+    default: op
+  admintools.warn:
+    description: Warn players
+    default: op
+  admintools.freeze:
+    description: Freeze players
+    default: op
+  admintools.tp:
+    description: Teleport commands
+    default: op
+  admintools.invsee:
+    description: View inventories
+    default: op
+  admintools.give:
+    description: Give items
+    default: op
+  admintools.log:
+    description: View admin logs
+    default: op
+  admintools.bypass:
+    description: Bypass mute, freeze
+    default: op
