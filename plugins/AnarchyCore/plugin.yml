@@ -1,0 +1,96 @@
+name: AnarchyCore
+main: AnarchyCore\Main
+version: 1.0.0
+api: ["5.0.0"]
+description: Core systems for Weisonty Anarchy server
+author: WeisontyDev
+website: ""
+load: STARTUP
+depend: []
+
+commands:
+  spawn:
+    description: Teleport to world spawn
+    usage: /spawn
+    permission: anarchycore.spawn
+  home:
+    description: Teleport to a home
+    usage: /home [name]
+    permission: anarchycore.home
+  sethome:
+    description: Set a home at your location
+    usage: /sethome <name>
+    permission: anarchycore.sethome
+  delhome:
+    description: Delete a home
+    usage: /delhome <name>
+    permission: anarchycore.delhome
+  rtp:
+    description: Randomly teleport in the world
+    usage: /rtp
+    permission: anarchycore.rtp
+  msg:
+    description: Send a private message
+    usage: /msg <player> <message>
+    permission: anarchycore.msg
+    aliases: [m, pm, tell, whisper, w]
+  reply:
+    description: Reply to the last private message
+    usage: /reply <message>
+    permission: anarchycore.reply
+    aliases: [r]
+  tpa:
+    description: Request to teleport to a player
+    usage: /tpa <player>
+    permission: anarchycore.tpa
+  tpaccept:
+    description: Accept a teleport request
+    usage: /tpaccept
+    permission: anarchycore.tpa
+  tpdeny:
+    description: Deny a teleport request
+    usage: /tpdeny
+    permission: anarchycore.tpa
+  profile:
+    description: View your or another player's profile
+    usage: /profile [player]
+    permission: anarchycore.profile
+  stats:
+    description: View server stats and leaderboard
+    usage: /stats
+    permission: anarchycore.stats
+
+permissions:
+  anarchycore.spawn:
+    description: Use /spawn
+    default: true
+  anarchycore.home:
+    description: Use /home
+    default: true
+  anarchycore.sethome:
+    description: Use /sethome
+    default: true
+  anarchycore.delhome:
+    description: Use /delhome
+    default: true
+  anarchycore.rtp:
+    description: Use /rtp
+    default: true
+  anarchycore.msg:
+    description: Use /msg
+    default: true
+  anarchycore.reply:
+    description: Use /reply
+    default: true
+  anarchycore.tpa:
+    description: Use /tpa
+    default: true
+  anarchycore.profile:
+    description: View profiles
+    default: true
+  anarchycore.stats:
+    description: View stats
+    default: true
+  anarchycore.admin:
+    description: Access admin NPC features
+    default: op
