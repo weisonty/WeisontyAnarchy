@@ -1,0 +1,99 @@
+server:
+  name: "Weisonty Anarchy"
+  spawn-world: "world"
+
+registration:
+  enabled: false
+  min-password-length: 6
+  max-attempts: 5
+
+homes:
+  max-homes: 5
+  cooldown-seconds: 3
+
+rtp:
+  min-distance: 500
+  max-distance: 10000
+  cooldown-seconds: 300
+  max-attempts: 30
+  safe-height-check: true
+
+spawn:
+  x: 0
+  y: 65
+  z: 0
+  world: "world"
+  safe-spawn: true
+
+tpa:
+  expire-seconds: 60
+  cooldown-seconds: 30
+
+msg:
+  blocked: false
+
+antispam:
+  enabled: true
+  messages-per-second: 3
+
+npc:
+  enabled: true
+  npcs:
+    server_info:
+      name: "§eServer Info"
+      skin: "steve"
+      x: 10
+      y: 65
+      z: 0
+      world: "world"
+      type: "SERVER_INFO"
+    rtp:
+      name: "§aRandom Teleport"
+      skin: "alex"
+      x: -10
+      y: 65
+      z: 0
+      world: "world"
+      type: "RTP"
+    stats:
+      name: "§bStatistics"
+      skin: "steve"
+      x: 5
+      y: 65
+      z: 5
+      world: "world"
+      type: "STATS"
+    help:
+      name: "§dHelp"
+      skin: "alex"
+      x: -5
+      y: 65
+      z: 5
+      world: "world"
+      type: "HELP"
+    settings:
+      name: "§9Settings"
+      skin: "steve"
+      x: 0
+      y: 65
+      z: 10
+      world: "world"
+      type: "SETTINGS"
+
+logging:
+  joins: true
+  leaves: true
+  deaths: true
+  kills: true
+  commands: true
+  chat: false
+  log-file: "logs/server.log"
+
+messages:
+  welcome: "§aWelcome to §lWeisonty Anarchy§a, {player}!"
+  welcome-back: "§7Welcome back, §e{player}§7! You've played §6{playtime}§7."
+  first-join: "§e{player} §7joined for the first time!"
+  join: "§7[§a+§7] §f{player}"
+  leave: "§7[§c-§7] §f{player}"
+  death: "§c{player} was slain by {killer}"
+  death-natural: "§c{player} died"
