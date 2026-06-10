@@ -1,0 +1,34 @@
+enabled: true
+
+checks:
+  fly:
+    enabled: true
+    max-air-ticks: 20
+    grace-ticks: 10
+    log-only: true
+  speed:
+    enabled: true
+    max-speed: 12.0
+    log-only: true
+  nofall:
+    enabled: true
+    min-fall-distance: 4.0
+    log-only: true
+  spam:
+    enabled: true
+    max-messages: 5
+    per-seconds: 3
+    log-only: true
+  teleport_abuse:
+    enabled: true
+    max-distance-per-tick: 30.0
+    log-only: true
+
+alerts:
+  notify-admins: true
+  admin-permission: "anticheat.admin"
+  log-file: "logs/anticheat.log"
+  log-all-to-console: false
+
+# Number of violations before escalating to admin alert
+violation-threshold: 3
