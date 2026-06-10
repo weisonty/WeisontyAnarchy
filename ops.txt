@@ -1,0 +1,5 @@
+# Add your username here to become server operator
+# One username per line (case-sensitive)
+# Example:
+# Steve
+# Alex
