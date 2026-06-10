@@ -1,0 +1,3 @@
+Place your custom Bedrock world folder here.
+The folder must contain level.dat and a db/ directory.
+Then set level-name= in server.properties to match the folder name.
