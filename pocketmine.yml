@@ -1,0 +1,71 @@
+settings:
+  language: "eng"
+  force-language: false
+  shutdown-message: "§cServer shutting down. Goodbye!"
+  query-plugins: true
+  deprecation-warnings: true
+  enable-dev-builds: false
+  async-workers: auto
+  enable-profiler: false
+
+memory:
+  global-limit: 0
+  main-limit: 0
+  main-hard-limit: 1024
+  check-rate: 20
+  continuous-trigger: true
+  continuous-trigger-rate: 30
+  garbage-collection:
+    period: 36000
+    collect-async-worker: true
+    low-memory-trigger: 40
+  memory-dump:
+    dump-async-worker: true
+  max-chunks:
+    trigger-chunk-collect: 500
+    value: 0
+  world-caches:
+    disable-chunk-cache: true
+    low-memory-trigger: 40
+
+network:
+  batch-threshold: 256
+  compression-level: 7
+  async-compression: false
+  upnp-forwarding: false
+  max-mtu-size: 1492
+  enable-encryption: true
+
+debug:
+  level: 1
+  commands: false
+
+level-settings:
+  default-format: "leveldb"
+  tick-rate: 1
+  chunk-sending:
+    per-tick: 4
+    spawn-radius: 4
+  chunk-ticking:
+    per-tick: 40
+    tick-radius: 3
+    light-updates: false
+    clear-tick-list: false
+  chunk-generation:
+    population-queue-size: 2
+  auto-save:
+    enabled: true
+    ticks: 6000
+
+chunk-sending:
+  per-tick: 4
+  spawn-radius: 4
+
+player:
+  save-player-data: true
+  anti-cheat:
+    warn-console: true
+
+aliases:
+  "warp rtp": rtp
+  "warp spawn": spawn
