@@ -1,0 +1,25 @@
+name: AntiCheatLite
+main: AntiCheatLite\Main
+version: 1.0.0
+api: ["5.0.0"]
+description: Lightweight anti-cheat monitoring for Weisonty Anarchy
+author: WeisontyDev
+load: STARTUP
+
+commands:
+  acalerts:
+    description: View recent anti-cheat alerts
+    usage: /acalerts [player] [lines]
+    permission: anticheat.admin
+  acbypass:
+    description: Toggle anti-cheat bypass for a player
+    usage: /acbypass <player>
+    permission: anticheat.admin
+
+permissions:
+  anticheat.admin:
+    description: View anti-cheat alerts
+    default: op
+  anticheat.bypass:
+    description: Bypass anti-cheat checks
+    default: op
